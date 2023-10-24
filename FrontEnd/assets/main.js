@@ -311,7 +311,8 @@ document.querySelector('.edit-2').addEventListener('submit', (e) => {
   })
   .then(data => {
     alert('Formulaire envoyé avec succès !');
-    location.reload();
+    projectShow();
+    toggleModal2();
   })
   .catch(error => {
     console.error('Erreur:', error);
